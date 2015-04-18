@@ -420,3 +420,62 @@
 
 // Ejercicio 18
 //
+//var numero1 = 0;
+//var numero2 = 0;
+//var totalResta = 0;
+//
+//function resta() {
+//    numero1 = parseFloat($("#numero1").val());
+//    numero2 = parseFloat($("#numero2").val());
+//
+//    if (numero1 > numero2) {
+//        totalResta = numero1 - numero2;
+//        $("#salida").html("La resta del primer número menos el segundo es: " + totalResta);
+//    } else {
+//        totalResta = numero2 - numero1;
+//        $("#salida").html("La resta del segundo número menos el primero es: " + totalResta);
+//    }
+//}
+//$("#procesar").click(resta);
+
+// Ejercicio 19
+//
+//var numero1 = 0;
+//var numero2 = 0;
+//var operacion = "";
+//var palabra;
+//var resultado = 0;
+//
+//function operar() {
+//    numero1 = parseFloat($("#numero1").val());
+//    numero2 = parseFloat($("#numero2").val());
+//    operacion = $("#operacion").val();
+//    operacion = operacion.toUpperCase();
+//
+//    switch (operacion) {
+//        case "S":
+//            resultado = numero1 + numero2;
+//            palabra = "suma";
+//            break;
+//        case "R":
+//            resultado = numero1 - numero2;
+//            palabra = "resta";
+//            break;
+//        case "M":
+//            resultado = numero1 * numero2;
+//            palabra = "multiplicación";
+//            break;
+//        case "D":
+//            resultado = numero1 / numero2;
+//            palabra = "división";
+//            break;
+//        default:
+//            resultado = "incorrecto, no se contempla esa opción";
+//            palabra = "operación";
+//    }
+//    $("#salida").html("El resultado de la " + palabra + " es: " + resultado + ".");
+//}
+//$("#operar").click(operar);
+
+// Ejercicio 20
+//

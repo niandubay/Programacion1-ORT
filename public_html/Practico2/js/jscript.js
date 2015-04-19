@@ -450,6 +450,7 @@
 //    numero1 = parseFloat($("#numero1").val());
 //    numero2 = parseFloat($("#numero2").val());
 //    operacion = $("#operacion").val();
+//    //ahora controlo que sea siempre en mayúsculas
 //    operacion = operacion.toUpperCase();
 //
 //    switch (operacion) {
@@ -478,4 +479,38 @@
 //$("#operar").click(operar);
 
 // Ejercicio 20
+//
+//var variable1 = 0;
+//var variable2 = 0;
+//var variableDeIntercambio = 0;
+//
+//function invertir(){
+//    variable1 = $("#variable1").val();
+//    variable2 = $("#variable2").val();
+//    
+//    $("#salida1").html("La Variable 1 tiene el valor: \"" + variable1 + "\", y la Variable 2 el valor: \"" + variable2 + "\".");
+//    variableDeIntercambio = variable1;
+//    variable1 = variable2;
+//    variable2 = variableDeIntercambio;
+//    $("#salida2").html("Ahora a Variable 1 tiene el valor: \"" + variable1 + "\", y la Variable 2 el valor: \"" + variable2 + "\".");
+//}
+//$("#invertir").click(invertir);
+
+// Ejercicio 21
+//
+//var caracter = 0;
+//
+//function verificar(){
+//    caracter = $("#caracter").val();
+//    caracterUp = caracter.toUpperCase();
+//    $("#caracter").val("");
+//    if (caracterUp==="A" || caracterUp==="E" || caracterUp==="I" || caracterUp==="O" || caracterUp==="U"){
+//        $("#salida").html("El caracter ingresado " + caracter + ", SI es una vocal.");
+//    } else {
+//        $("#salida").html("El caracter ingresado " + caracter + ", NO es una vocal.");
+//    }
+//}
+//$("#verificar").click(verificar);
+
+// Ejercicio 22
 //

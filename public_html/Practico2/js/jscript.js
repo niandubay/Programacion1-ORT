@@ -514,3 +514,127 @@
 
 // Ejercicio 22
 //
+//var numero1 = 0;
+//var numero2 = 0;
+//
+//function verificar(){
+//    numero1 = parseFloat($("#numero1").val());
+//    numero2 = parseFloat($("#numero2").val());
+//    // el operador % devuelve el resto de operar numero1 entre numero2
+//    if((numero1 % numero2) === 0){
+//        $("#salida").html("El Número 1 (" + numero1 + "), SI es múltiplo del Numero 2 (" + numero2 + ").");
+//    } else {
+//                $("#salida").html("El Número 1 (" + numero1 + "), NO es múltiplo del Numero 2 (" + numero2 + ").");
+//    }
+//}
+//$("#verificar").click(verificar);
+
+// Ejercicio 23
+//
+//var numeroNoches = 0;
+//var formaPago = 0;
+//var nochesExtra = 0;
+//var nochesTotales = 0;
+//var precioNoche = 40;
+//var precioTotal = 0;
+//var palabra = "";
+//
+//function promocion() {
+//    // al comienzo de la función reinicio las noches extras para
+//    // que no se vaya acumulando el valor con cada ejecución...
+//    nochesExtra = 0;
+//
+//    //utilizo parseInt porque no puede ser 1,3 noches...
+//    numeroNoches = parseInt($("#numeroNoches").val());
+//    formaPago = $("#formaPago").val();
+//    // hago que el caracter sea siempre mayúscula para el SWITCH
+//    formaPago = formaPago.toUpperCase();
+//    precioTotal = numeroNoches * precioNoche;
+//    
+//    // esto es sólo para contemplar mayúsculas/minúsculas
+//    switch (formaPago){
+//        case "T":
+//            palabra = "tarjeta";
+//            break
+//        case "E":
+//            palabra = "efectivo";
+//            break
+//        // el default es por si ingresa una letra distinta a T o E
+//        default:            
+//            palabra = "método desconocido";
+//    }
+//    // aquí controlo la lógica
+//    if (numeroNoches >= 7) {
+//        nochesExtra = nochesExtra + 2;
+//        // si es con tarjeta, una noche extra más
+//        if (formaPago === "T"){
+//            nochesExtra++;
+//        }
+//    } else if (numeroNoches >= 3 && numeroNoches < 7) {
+//        nochesExtra ++;
+//    }
+//    
+//    nochesTotales = numeroNoches + nochesExtra;
+//    
+//    $("#salida").html(numeroNoches + " noches pagadas con " + palabra + " -> hay " + nochesExtra + " noches de regalo, el usuario se hopeda " + nochesTotales + " noches, el costo total son $" + precioTotal + ".");
+//}
+//$("#promocion").click(promocion);
+
+// Ejercicio 24
+//
+//var millasAcumuladas = 0;
+//var miembroPlus = "";
+//var millasTotales = 0;
+//var destino = "";
+//var palabra = "";
+//
+//function calcular() {
+//    // convierto en número con comas las millas,
+//    // si ingreso 100grt... lo pasa a 100.
+//    millasAcumuladas = parseInt($("#millasAcumuladas").val());
+//    miembroPlus = $("#miembroPlus").val();
+//    miembroPlus = miembroPlus.toUpperCase();
+//
+//    // controlo que las millas sean un número para seguir...
+//    if (isNaN(millasAcumuladas)) {
+//        // si no es un número le digo que ingrese bien...
+//        $("#salida").html("Ingrese correctamente el número de millas.");
+//    // si es un número sigo con lo que dice el else...    
+//    } else {
+//        // controlo que sea S o N para seguir...
+//        if (miembroPlus === "S" || miembroPlus === "N") {
+//            // como son sólo dos opciones lo siguiente se puede hacer
+//            // igual de sencillo con un if pero ta, usé un switch.
+//            switch (miembroPlus) {
+//                case "S":
+//                    // duplico las millas acumuladas
+//                    millasTotales = millasAcumuladas * 2;
+//                    palabra = "soy parte";
+//                    break
+//                case "N":
+//                    // que se joda
+//                    millasTotales = millasAcumuladas;
+//                    palabra = "no soy parte";
+//            }
+//            // controlo el destino
+//            if (millasTotales >= 60000) {
+//                destino = " puedo viajar a Europa como destino más lejano.";
+//            } else if (millasTotales >= 30000) {
+//                destino = " puedo viajar a América del Norte como destino más lejano.";
+//            } else if (millasTotales >= 15000) {
+//                destino = " puedo viajar a América del Sur como destino más lejano.";
+//            } else {
+//                destino = " no me da ni para salir de mi casa.";
+//            }
+//            // imprimo  mensaje final
+//            $("#salida").html("Tengo " + millasAcumuladas + " millas acumuladas y " + palabra + " del plan Plus -> " + destino);
+//        } else {
+//            // le digo que ponga bien la letrita "S" o "N"
+//            $("#salida").html("Ingrese correctamente si es parte del plan Plus.");
+//        }
+//    }
+//}
+//$("#calcular").click(calcular);
+
+// Ejercicio 25
+//

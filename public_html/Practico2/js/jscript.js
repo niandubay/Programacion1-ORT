@@ -638,3 +638,160 @@
 
 // Ejercicio 25
 //
+//var codigo = "";
+//var departamento = "";
+//
+//function buscar(){
+//    codigo = $("#codigo").val();
+//    codigo = codigo.toUpperCase();
+//    switch(codigo){
+//        case "A":
+//            departamento = "Canelones";
+//            // sin el break hace esto y pasa a hacer el case "B"...
+//            break
+//        case "B":
+//            departamento = "Maldonado";
+//            break
+//        case "C":
+//            departamento = "Rocha";
+//            break
+//        case "D":
+//            departamento = "Treinta y Tres";
+//            break
+//        case "E":
+//            departamento = "Cerro Largo";
+//            break
+//        case "F":
+//            departamento = "Rivera";
+//            break
+//        case "G":
+//            departamento = "Artigas";
+//            break
+//        case "H":
+//            departamento = "Salto";
+//            break
+//        case "I":
+//            departamento = "Paisandú";
+//            break
+//        case "J":
+//            departamento = "Río Negro";
+//            break
+//        case "K":
+//            departamento = "Soriano";
+//            break
+//        case "L":
+//            departamento = "Colonia";
+//            break
+//        case "M":
+//            departamento = "San José";
+//            break
+//        case "N":
+//            departamento = "Flores";
+//            break
+//        case "O":
+//            departamento = "Florida";
+//            break
+//        case "P":
+//            departamento = "Lavalleja";
+//            break
+//        case "Q":
+//            departamento = "Durazno";
+//            break
+//        case "R":
+//            departamento = "Tacuarembó";
+//            break
+//        case "S":
+//            departamento = "Montevideo";
+//            break
+//        default:
+//            departamento = "Código de departamento desconocido.";
+//    }
+//    $("#salida").html(departamento);
+//}
+//$("#buscar").click(buscar);
+
+// Ejercicio 26
+//
+//var numero = 0;
+//var prueba = 0;
+//var contador = 0;
+//var control = 0;
+//// textitos en variables :)
+//var mensaje1 = "Estás lejos.";
+//var mensaje2 = "Te estás acercando...";
+//var mensaje3 = "Cada vez más cerca...";
+//var mensaje4 = "Muy pero muy cerca!!!";
+//
+//function recordar() {
+//    numero = parseInt($("#numero").val());
+//    if (numero > 0 && numero < 101) {
+//        $("#ingreso").css("display", "none");
+//        $("#adivinar").css("display", "block");
+//    } else {
+//        $("#salida1").html("El número debe ser de 1 a 100...");
+//    }
+//}
+//$("#recordar").click(recordar);
+//
+//function probar() {
+//    prueba = parseInt($("#prueba").val());
+//    contador++;
+//    // controlo que el número prueba sea entre 1 y 100...
+//    if (prueba > 0 && prueba < 101) {
+//        control = prueba - numero;
+//        // si acierta...
+//        if (control === 0) {
+//            $("#salida3").html("Has acertado!!! el número era el " + numero + ".<br>Has tardado " + contador + " intentos.");
+//            $("#adivinar").css("display", "none");
+//            $("#mensaje").css("display", "block");
+//        }
+//        // si no acierta me aseguro que el número control sea positivo...
+//        if (control < 0){
+//            control = control * -1;
+//        }
+//        // controlo la distancia al número a adivinar...
+//        if (control >= 1 && control <= 4){
+//            $("#salida2").html(mensaje4);
+//        } else if (control >= 5 && control <= 9) {
+//            $("#salida2").html(mensaje3);
+//        } else if (control >= 10 && control <= 15) {
+//            $("#salida2").html(mensaje2);
+//        } else if (control > 15) {
+//            $("#salida2").html(mensaje1);
+//        }
+//    // esto es por si el número prueba no está entre 1 y 100...
+//    } else {
+//        $("#salida2").html("El número debe ser de 1 a 100... <cite>...este intento igual se cuenta!</cite>");
+//    }
+//}
+//$("#probar").click(probar);
+
+// Ejercicio 27
+//
+//var manoEquipo1 = 0;
+//var manoEquipo2 = 0;
+//var puntuacionTotalEquipo1 = 0;
+//var puntuacionTotalEquipo2 = 0;
+//
+//function agregar(){
+//    manoEquipo1 = parseInt($("#manoEquipo1").val());
+//    manoEquipo2 = parseInt($("#manoEquipo2").val());
+//    puntuacionTotalEquipo1 = puntuacionTotalEquipo1 + manoEquipo1;
+//    puntuacionTotalEquipo2 = puntuacionTotalEquipo2 + manoEquipo2;
+//    if(puntuacionTotalEquipo1 >= 30 || puntuacionTotalEquipo2 >= 30){
+//        $("#salida1").css("display","none");
+//        $("#agregar").attr("disabled", "disabled");
+//        $("#salida2").html("Juego terminado! Los totales finales son:<br>\n\
+//El equipo 1: " + puntuacionTotalEquipo1 + " puntos.<br>El equipo 2: " + puntuacionTotalEquipo2 + " puntos.");
+//        if (puntuacionTotalEquipo1 === puntuacionTotalEquipo2){
+//            $("#salida3").html("Yo diría que han empatado...");
+//        } else if (puntuacionTotalEquipo1 > puntuacionTotalEquipo2){
+//            $("#salida3").html("Ha ganado el Equipo 1!");
+//        } else {
+//            $("#salida3").html("Ha ganado el Equipo 2!");
+//        }
+//    } else {
+//        $("#salida1").html("Equipo 1: " + puntuacionTotalEquipo1 + " puntos.<br>Equipo 2: " + puntuacionTotalEquipo2 + " puntos."); 
+//   }
+//}
+//$("#agregar").click(agregar);

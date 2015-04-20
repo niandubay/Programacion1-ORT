@@ -799,8 +799,8 @@
 // Ejercicio 28
 //
 //var contador = 0;
-//var val1 = ":)";
-//var val2 = "¬¬";
+//var val1 = "X";
+//var val2 = "O";
 //var casilla1 = "";
 //var casilla2 = "";
 //var casilla3 = "";

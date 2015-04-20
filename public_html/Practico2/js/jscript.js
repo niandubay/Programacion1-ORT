@@ -999,3 +999,289 @@
 
 // Ejercicio 29
 //
+//var val1 = "";
+//var val2 = "";
+//var contador = 0;
+//var casilla1 = "";
+//var casilla2 = "";
+//var casilla3 = "";
+//var casilla4 = "";
+//var casilla5 = "";
+//var casilla6 = "";
+//var casilla7 = "";
+//var casilla8 = "";
+//var casilla9 = "";
+//
+//// funciones para elegir diseño de Jugador 1
+//function pieza1() {
+//    val1 = $("#pieza1").val();
+//    $("#pieza1").css("display", "none");
+//    $("#opcion1").css("display", "block");
+//    $("#opcion1").attr("disabled", "disabled");
+//    $("#opcion1").val(val1);
+//    $("#pieza2").attr("disabled", "disabled");
+//    $("#pieza3").attr("disabled", "disabled");
+//    $("#elegida1").html("Pieza elegida Jugador 1: " + val1 + "<br><cite>...falta el Jugador 2...</cite>");
+//    elegidas();
+//}
+//$("#pieza1").click(pieza1);
+//
+//function pieza2() {
+//    val1 = $("#pieza2").val();
+//    $("#pieza2").css("display", "none");
+//    $("#opcion2").css("display", "block");
+//    $("#opcion2").attr("disabled", "disabled");
+//    $("#opcion2").val(val1);
+//    $("#pieza1").attr("disabled", "disabled");
+//    $("#pieza3").attr("disabled", "disabled");
+//    $("#elegida1").html("Pieza elegida Jugador 1: " + val1 + "<br><cite>...falta el Jugador 2...</cite>");
+//    elegidas();
+//}
+//$("#pieza2").click(pieza2);
+//
+//function pieza3() {
+//    val1 = $("#pieza3").val();
+//    $("#pieza3").css("display", "none");
+//    $("#opcion3").css("display", "block");
+//    $("#opcion3").attr("disabled", "disabled");
+//    $("#opcion3").val(val1);
+//    $("#pieza1").attr("disabled", "disabled");
+//    $("#pieza2").attr("disabled", "disabled");
+//    $("#elegida1").html("Pieza elegida Jugador 1: " + val1 + "<br><cite>...falta el Jugador 2...</cite>");
+//    elegidas();
+//}
+//$("#pieza3").click(pieza3);
+//
+//// funciones para elegir diseño de Jugador 2
+//function pieza4() {
+//    val2 = $("#pieza4").val();
+//    $("#pieza4").css("display", "none");
+//    $("#opcion4").css("display", "block");
+//    $("#opcion4").attr("disabled", "disabled");
+//    $("#opcion4").val(val2);
+//    $("#pieza5").attr("disabled", "disabled");
+//    $("#pieza6").attr("disabled", "disabled");
+//    $("#elegida2").html("Pieza elegida Jugador 2: " + val2 + "<br><cite>...falta el Jugador 1...</cite>");
+//    elegidas();
+//}
+//$("#pieza4").click(pieza4);
+//
+//function pieza5() {
+//    val2 = $("#pieza5").val();
+//    $("#pieza5").css("display", "none");
+//    $("#opcion5").css("display", "block");
+//    $("#opcion5").attr("disabled", "disabled");
+//    $("#opcion5").val(val2);
+//    $("#pieza4").attr("disabled", "disabled");
+//    $("#pieza6").attr("disabled", "disabled");
+//    $("#elegida2").html("Pieza elegida Jugador 2: " + val2 + "<br><cite>...falta el Jugador 1...</cite>");
+//    elegidas();
+//}
+//$("#pieza5").click(pieza5);
+//
+//function pieza6() {
+//    val2 = $("#pieza6").val();
+//    $("#pieza6").css("display", "none");
+//    $("#opcion6").css("display", "block");
+//    $("#opcion6").attr("disabled", "disabled");
+//    $("#opcion6").val(val2);
+//    $("#pieza4").attr("disabled", "disabled");
+//    $("#pieza5").attr("disabled", "disabled");
+//    $("#elegida2").html("Pieza elegida Jugador 2: " + val2 + "<br><cite>...falta el Jugador 1...</cite>");
+//    elegidas();
+//}
+//$("#pieza6").click(pieza6);
+//
+//// función para saber si ya han elegido pieza los 2 jugadores..
+//function elegidas() {
+//    if ((val1 !== "") && (val2 !== "")) {
+//        $("#opciones").css("display", "none");
+//        $("#tateti").css("display", "block");
+//    }
+//}
+//
+//// funciones para cada botón....grrrrr
+//function button1() {
+//    $("#button1").css("display", "none");
+//    $("#casilla1").css("display", "block");
+//    $("#casilla1").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla1").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla1").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button1").click(button1);
+//
+//function button2() {
+//    $("#button2").css("display", "none");
+//    $("#casilla2").css("display", "block");
+//    $("#casilla2").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla2").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla2").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button2").click(button2);
+//
+//function button3() {
+//    $("#button3").css("display", "none");
+//    $("#casilla3").css("display", "block");
+//    $("#casilla3").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla3").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla3").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button3").click(button3);
+//
+//function button4() {
+//    $("#button4").css("display", "none");
+//    $("#casilla4").css("display", "block");
+//    $("#casilla4").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla4").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla4").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button4").click(button4);
+//
+//function button5() {
+//    $("#button5").css("display", "none");
+//    $("#casilla5").css("display", "block");
+//    $("#casilla5").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla5").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla5").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button5").click(button5);
+//
+//function button6() {
+//    $("#button6").css("display", "none");
+//    $("#casilla6").css("display", "block");
+//    $("#casilla6").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla6").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla6").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button6").click(button6);
+//
+//function button7() {
+//    $("#button7").css("display", "none");
+//    $("#casilla7").css("display", "block");
+//    $("#casilla7").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla7").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla7").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button7").click(button7);
+//
+//function button8() {
+//    $("#button8").css("display", "none");
+//    $("#casilla8").css("display", "block");
+//    $("#casilla8").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla8").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla8").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button8").click(button8);
+//
+//function button9() {
+//    $("#button9").css("display", "none");
+//    $("#casilla9").css("display", "block");
+//    $("#casilla9").attr("disabled", "disabled");
+//    if ((contador % 2) === 0) {
+//        // si es par es jugador 1
+//        $("#casilla9").val(val1);
+//    } else {
+//        // si no, es jugador 2
+//        $("#casilla9").val(val2);
+//    }
+//    contador++;
+//    comprobar();
+//}
+//$("#button9").click(button9);
+//
+//// funcion para comprobar si alguien gana..
+//// el llamado a esta función se hace desde cada función de botón...
+//function comprobar() {
+//    // recojo los valores de las casillas...
+//    casilla1 = $("#casilla1").val();
+//    casilla2 = $("#casilla2").val();
+//    casilla3 = $("#casilla3").val();
+//    casilla4 = $("#casilla4").val();
+//    casilla5 = $("#casilla5").val();
+//    casilla6 = $("#casilla6").val();
+//    casilla7 = $("#casilla7").val();
+//    casilla8 = $("#casilla8").val();
+//    casilla9 = $("#casilla9").val();
+//    //me encajo terrible if...
+//    // si alguien gana pasa esto...
+//    if ((casilla1 === casilla2 && casilla2 === casilla3 && casilla1 !== "") ||
+//            (casilla4 === casilla5 && casilla5 === casilla6 && casilla4 !== "") ||
+//            (casilla7 === casilla8 && casilla8 === casilla9 && casilla7 !== "") ||
+//            (casilla1 === casilla4 && casilla4 === casilla7 && casilla1 !== "") ||
+//            (casilla2 === casilla5 && casilla5 === casilla8 && casilla2 !== "") ||
+//            (casilla3 === casilla6 && casilla6 === casilla9 && casilla3 !== "") ||
+//            (casilla1 === casilla5 && casilla5 === casilla9 && casilla1 !== "") ||
+//            (casilla3 === casilla5 && casilla5 === casilla7 && casilla3 !== "")) {
+//        // controlo con el contador cual jugador ganó...
+//        if (((contador - 1) % 2) === 0) {
+//            $("#salida2").html("Gana el Jugador 1 !!!");
+//        } else {
+//            $("#salida2").html("Gana el Jugador 2 !!!");
+//        }
+//        // cambio el cartel de turno por finalizado el juego...
+//        $("#salida1").html("El juego ha acabado!");
+//    } else {
+//        //si nadie gana cambio el cartel del turno...
+//    if ((contador % 2) === 0) {
+//        $("#salida1").html("Turno del Jugador 1");
+//    } else {
+//        $("#salida1").html("Turno del Jugador 2");
+//    }
+//    }
+//}

@@ -217,16 +217,16 @@
 
 //Ejercicio 14
 //
-//var chirridos;
-//var tempFar;
-//var tempCel;
-//
-//function temperatura()
-//{
-//    chirridos = parseFloat($("#chirridos").val());
-//    tempFar = ((chirridos - 40) / 4) + 50;
-//    tempCel = ((tempFar - 32) / 1.8);
-//    
-//    $("#temperatura").html("Temperatura en °C: "+ tempCel);
-//}
-//$("#calcular").click(temperatura);
+var chirridos;
+var tempFar;
+var tempCel;
+
+function temperatura()
+{
+    chirridos = parseFloat($("#chirridos").val());
+    tempFar = ((chirridos - 40) / 4) + 50;
+    tempCel = ((tempFar - 32) / 1.8);
+    
+    $("#temperatura").html("Temperatura en °C: "+ tempCel);
+}
+$("#calcular").click(temperatura);

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 15</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body><p>Ejercicio 15</p>
+        <label for="mes"> Seleccione el mes:</label>
+        <select id="mes">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="setiembre">Setiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+        </select><br>
+        <label for="dia"> Día de inicio:</label>
+        <select id="dia">
+            <option value="1">Lunes</option>
+            <option value="2">Martes</option>
+            <option value="3">Miércoles</option>
+            <option value="4">Jueves</option>
+            <option value="5">Viernes</option>
+            <option value="6">Sábado</option>
+            <option value="7">Domingo</option>
+        </select><br>
+        <input type="button" value="Dibujar calendario" id="dibujarCalendario"><br><br>
+        <table border="1">
+            <tr>
+                <th>Lu</th>
+                <th>Ma</th>
+                <th>Mi</th>
+                <th>Ju</th>
+                <th>Vi</th>
+                <th>Sá</th>
+                <th>Do</th>
+            </tr>
+            <tbody id="calendario">                
+            </tbody>
+        </table>
+
+        <script src="../js/jquery-2.1.3.min.js"></script>
+        <script src="../js/js15.js"></script>
+    </body>
+</html>

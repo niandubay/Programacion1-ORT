@@ -2,11 +2,11 @@
 //
 function dibujarCalendario() {
     // declaro variables
-    var mes;
-    var diaDeInicio;
+    var mes = "";
+    var diaDeInicio = 0;
     var celdasVacias = 0;
-    var diasDelMes;
-    var semanasDelMes;
+    var diasDelMes = 0;
+    var semanasDelMes = 0;
     var numDia = 1;
     var contadorDeDias = 1;
     
@@ -67,45 +67,41 @@ function dibujarCalendario() {
 
     // el primer for se encarga de recorrer las semanas necesarias...
     for (semana = 1; semana <= semanasDelMes; semana++) {
+        $("#calendario").append("<tr>");
         // aislo el caso de la primer semana
         if (semana === 1) {
-            $("#calendario").append("<tr>");
             // las casillas vacías están bien..
             for (contadorVacias = celdasVacias; contadorVacias >= 1; contadorVacias--) {
                 $("#calendario").append("<td></td>");
                 contadorDeDias++;
             }
-            // uso el contadorDeDías para saber las celdas estoy y cuántas
+            // uso el contadorDeDías para saber la celda en que estoy y cuántas
             // me quedan por dibujar, dibujo hasta que diasPrimeraSemana sea > 7, 
             // ahí paso a las siguientes semanas...
             for (diasPrimerSemana = contadorDeDias; diasPrimerSemana <= 7; diasPrimerSemana++) {
                 $("#calendario").append("<td>" + numDia + "</td>");
                 numDia++;
             }
-            $("#calendario").append("<tr>");
         }
         // con esto controlo las semanas intermedias...
         if ((semana !== 1) && (semana < semanasDelMes)) {
-            $("#calendario").append("<tr>");
             // un for de 7 días...
             for (diasSemanasIntermedias = 1; diasSemanasIntermedias <= 7; diasSemanasIntermedias++) {
                 $("#calendario").append("<td>" + numDia + "</td>");
                 // hago crecer la fecha..
                 numDia++;
             }
-            $("#calendario").append("<tr>");
         }
         // la última semana la hago aparte porque tengo que controlar el final...
         if (semana === semanasDelMes) {
-            $("#calendario").append("<tr>");
             // voy a dibujar td's sólo hasta que numDia sea igual a diasDelMes...
             for (diasSemanaFinal = numDia; diasSemanaFinal <= diasDelMes; diasSemanaFinal++) {
                 $("#calendario").append("<td>" + numDia + "</td>");
                 // hago crecer la fecha..
                 numDia++;
             }
-            $("#calendario").append("<tr>");
         }
+        $("#calendario").append("</tr>");
     }
 //    logs:
 //    console.log(celdasTotales);

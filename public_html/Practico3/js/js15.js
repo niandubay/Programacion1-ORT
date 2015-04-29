@@ -1,20 +1,5 @@
 // Ejercicio 15
 //
-//
-//
-//
-//
-// el $("#calendario").append("<tr>"); me genera las dos etiquetas,
-// la de apertura y la de cierre. Tengo que crearle una id dinámica a cada
-// <tr> basado en el valor de "s" y luego en los for en vez de hacerle el
-// append a #calendario, se lo hago a esa id...
-//
-//
-//
-//
-//
-//
-//
 function dibujarCalendario() {
     // declaro variables
     var mes = "";
@@ -80,21 +65,21 @@ function dibujarCalendario() {
     // calculo cuantas celdas vacías hay en la 1er semana...
     celdasVacias = diaDeInicio - 1;
 
-    // el primer for se encarga de recorrer las semanas necesarias...
+    // con el for me encargo de recorrer las semanas necesarias...
     for (semana = 1; semana <= semanasDelMes; semana++) {
-        $("#calendario").append("<tr>");
+        $("#calendario").append("<tr id="+semana+">");
         // aislo el caso de la primer semana
         if (semana === 1) {
             // las casillas vacías están bien..
             for (contadorVacias = celdasVacias; contadorVacias >= 1; contadorVacias--) {
-                $("#calendario").append("<td></td>");
+                $("#"+semana).append("<td></td>");
                 contadorDeDias++;
             }
             // uso el contadorDeDías para saber la celda en que estoy y cuántas
             // me quedan por dibujar, dibujo hasta que diasPrimeraSemana sea > 7, 
             // ahí paso a las siguientes semanas...
             for (diasPrimerSemana = contadorDeDias; diasPrimerSemana <= 7; diasPrimerSemana++) {
-                $("#calendario").append("<td>" + numDia + "</td>");
+                $("#"+semana).append("<td>" + numDia + "</td>");
                 numDia++;
             }
         }
@@ -102,7 +87,7 @@ function dibujarCalendario() {
         if ((semana !== 1) && (semana < semanasDelMes)) {
             // un for de 7 días...
             for (diasSemanasIntermedias = 1; diasSemanasIntermedias <= 7; diasSemanasIntermedias++) {
-                $("#calendario").append("<td>" + numDia + "</td>");
+                $("#"+semana).append("<td>" + numDia + "</td>");
                 // hago crecer la fecha..
                 numDia++;
             }
@@ -111,20 +96,13 @@ function dibujarCalendario() {
         if (semana === semanasDelMes) {
             // voy a dibujar td's sólo hasta que numDia sea igual a diasDelMes...
             for (diasSemanaFinal = numDia; diasSemanaFinal <= diasDelMes; diasSemanaFinal++) {
-                $("#calendario").append("<td>" + numDia + "</td>");
+                $("#"+semana).append("<td>" + numDia + "</td>");
                 // hago crecer la fecha..
                 numDia++;
             }
         }
         $("#calendario").append("</tr>");
     }
-//    logs:
-//    console.log(celdasTotales);
-//    console.log(semanasDelMes);
-//    console.log(celdasVacias);
-//    console.log(diaDeInicio);
-//    console.log(contadorDeDias);
-//    console.log(numDia);
 }
 
 $("#dibujarCalendario").click(dibujarCalendario);

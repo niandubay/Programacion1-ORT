@@ -23,8 +23,12 @@ function esMayor(_edad,_tope){
     var _resultado;
     if(_edad > _tope){
         _resultado = true;
+        // o directamente return true;
     } else {
         _resultado = false;
+        // o directamente return false;
     }
     return _resultado;
+    // habría que borrar este último return si ya
+    // lo hacemos dentro del if.
 }

@@ -1,5 +1,20 @@
 // Ejercicio 15
 //
+//
+//
+//
+//
+// el $("#calendario").append("<tr>"); me genera las dos etiquetas,
+// la de apertura y la de cierre. Tengo que crearle una id dinámica a cada
+// <tr> basado en el valor de "s" y luego en los for en vez de hacerle el
+// append a #calendario, se lo hago a esa id...
+//
+//
+//
+//
+//
+//
+//
 function dibujarCalendario() {
     // declaro variables
     var mes = "";

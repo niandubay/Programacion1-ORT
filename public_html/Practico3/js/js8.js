@@ -5,7 +5,7 @@ var numero = 0;
 function mostrar (){
     numero = parseInt($("#numero").val());
     if ((2<=numero) && (numero <=50)){
-        for(var i = numero; i >= 2; i--){
+        for(var i = numero; i >= 1; i--){
             $("#salida").append(" -");
         }
     } else {

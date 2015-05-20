@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Práctico 6 - Ejercicio 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Ejercicio 7</p>
+        <p>Comenzamos con un Array creado con los nombres Ana, Lucía y María</p>
+        <input type="button" value="Ingresar nombre Juan" id="agregarNombre"><br>
+        <input type="button" value="Mostrar largo del Array" id="mostrarLargo"><br>
+        <input type="button" value="Mostrar posición 1" id="mostrarPosicion1"><br>
+        <input type="button" value="Mostrar posición length-1" id="mostrarLengthMenos1"><br>
+        <input type="button" value="Mostrar elementos del Array" id="mostrarElementos"><br>        
+        <label for="nombre1">Nombre a consultar:</label>
+        <input type="text" id="nombre1">
+        <input type="button" value="Consultar si está" id="existe"><br> 
+        <label for="nombre2">Nombre a consultar:</label>
+        <input type="text" id="nombre2">
+        <input type="button" value="Consultar posición" id="posicion"><br> 
+        <label for="nombre3">Nombre a modificar:</label>
+        <input type="text" id="nombre3">
+        <input type="button" value="Nombre a modificar" id="consultar"><br>
+        <div id="formularioModificacion" style="display: none;">
+        <label for="nombre4">Nombre modificado:</label>
+        <input type="text" id="nombre4">
+        <input type="button" value="Nombre modificado" id="modificar"><br>
+        </div>
+        
+        <p id="salida"></p>
+        
+        <script src="../js/jquery-2.1.3.min.js"></script>
+        <script src="../js/js7.js"></script>
+    </body>
+</html>

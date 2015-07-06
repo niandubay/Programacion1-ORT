@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Practico 8 - Ejercicio 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            th, td {
+                border: solid 1px black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Ejercicio 7</p>
+        <label for="ci">CI:</label>
+        <input type="text" id="ci"><br>
+        <label for="movil">Móvil:</label>
+        <input type="text" id="movil"><br>
+        <label for="horaDePartida">Hora de partida:</label>
+        <input type="text" id="horaDePartida"><br>
+        <label for="horaDeLlegada">Hora de llegada:</label>
+        <input type="text" id="horaDeLlegada"><br>
+        <label for="monto">Monto:</label>
+        <input type="text" id="monto"><br>
+        <input type="button" value="Ingresar Viaje" id="ingresarViaje"><br>
+        <label for="reportePorMovil">Reporte por Móvil:</label>
+        <input type="text" id="reportePorMovil">
+        <input type="button" value="Generar Reporte" id="generarReportePorMovil"><br>
+        <input type="button" value="Generar Reporte Por Horas" id="generarReportePorHoras"><br>
+        <div id="mensajesReportePorMovil"></div>
+        <div id="mensajesReportePorHoras">
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+                
+        <script src="../js/jquery-2.1.3.min.js"></script>
+        <script src="../js/js7.js"></script>
+    </body>
+</html>

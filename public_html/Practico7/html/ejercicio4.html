@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Práctico 7 - Ejercicio 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td, th {border:1px solid}
+        </style>
+    </head>
+    <body>
+        <p>Ejercicio 4</p>
+        <p>Ingresar Ventas</p>
+        <label for="marca">Marca:</label>
+        <select id="marca">
+            <option value="samsung">Samsung</option>
+            <option value="sony">Sony</option>
+            <option value="lg">LG</option>
+        </select><br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo"><br>
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio"><br>
+        <label for="cantidad">Cantidad:</label>
+        <input type="text" id="cantidad"><br>
+        <input type="button" value="Ingresar Venta" id="ingresarVenta"><br>
+        <input type="button" value="Ventas mayores a 2mil pesos" id="ventasMayoresDosMilPesos"><br>
+        <table id="tabla1">
+            <thead></thead>
+            <tbody></tbody>
+        </table><br>
+        <label for="totalUnidadesVendidasPorModelo">Ventas por modelo:</label>
+        <input type="text" id="totalUnidadesVendidasPorModelo">
+        <input type="button" value="Mostrar" id="ventasPorModelo"><br>
+        <p id="salida"></p>
+             
+        
+        <script src="../js/jquery-2.1.3.min.js"></script>
+        <script src="../js/js4.js"></script>
+    </body>
+</html>

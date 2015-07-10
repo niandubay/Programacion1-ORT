@@ -204,7 +204,4 @@ $("#generarReportePorMovil").click(function () {
     var _movil = parseInt($("#reportePorMovil").val());
     reportePorMovil(_movil);
 });
-$("#generarReportePorHoras").click(function () {
-    var _movil = parseInt($("#reportePorHoras").val());
-    reportePorHoras();
-});
+$("#generarReportePorHoras").click(reportePorHoras);

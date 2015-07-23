@@ -7,7 +7,7 @@ function Persona(_nombre, _edad, _hobbies) {
 
     this.cumplirAnios = function () {
         this.edad++;
-        alert("Feliz cumple, ahora tenés " + this.edad);
+        console.log("Feliz cumple, ahora tenés " + this.edad);
     };
     
     this.obtenerPrimerHobbie = function () {
